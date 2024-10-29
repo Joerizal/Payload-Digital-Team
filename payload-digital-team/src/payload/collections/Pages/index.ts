@@ -70,6 +70,7 @@ export const Pages: CollectionConfig = {
         },
       ],
     },
+ 
     slugField(),
   ],
 }

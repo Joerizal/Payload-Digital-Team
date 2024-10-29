@@ -1,0 +1,498 @@
+/* Define your global styles here */
+
+// @import url("https://fonts.googleapis.com/css2?family=Avenir:wght@400;500;600;700;800&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Avenir:wght@800&display=swap");
+
+/* styles.css */
+@font-face {
+  font-family: "Avenir";
+  src: url("../assets/font/AvenirLTStd-Book.otf") format("truetype"); /* Adjust the path and file name accordingly */
+}
+
+body {
+  font-family: "Avenir";
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+.v-tooltip .v-overlay__content {
+  background-color: #002680 !important;
+  color: white !important; /* Adjust text color if needed */
+}
+.font-16-400,
+.v-list-item-title {
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 24px; /* 150% */
+}
+
+.font-12-400 {
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 24px; /* 150% */
+}
+
+.font-12-800 {
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 800 !important;
+  line-height: 24px; /* 150% */
+}
+
+.navbar-image {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+/* Specific Styles for CustomAlert */
+#alert-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#delete-button {
+  color: red;
+}
+
+#cancel-button {
+  color: secondary;
+}
+.custom-toolbar {
+  background-color: transparent !important; /* Override default background color */
+}
+.delete-modal {
+  background-color: white;
+}
+
+.font-15-400 {
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 28px;
+  color: #7e7e7e !important ;
+}
+
+.bg-E5E9F2 {
+  background-color: #e5e9f2 !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+// .card-98 {
+//   width: 97.5%;
+// }
+
+.font-34-800 {
+  font-size: 34px !important;
+  font-style: normal;
+  font-weight: 800 !important;
+  line-height: 40px; /* 117.647% */
+  letter-spacing: 0.25px;
+}
+
+.font-22-800 {
+  font-size: 22px !important;
+  font-style: normal;
+  font-weight: 800 !important;
+  line-height: 24px !important; /* 150% */
+}
+
+.font-16-800 {
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 800 !important;
+  line-height: 24px !important; /* 150% */
+}
+
+.font-14-800 {
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 800 !important;
+  line-height: 24px; /* 150% */
+}
+
+.font-28-800 {
+  font-size: 28px !important;
+  font-style: normal;
+  font-weight: 800 !important;
+  line-height: 32px; /* 150% */
+}
+
+.font-14-400 {
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 20px !important; /* 150% */
+}
+
+.font-10-400 {
+  font-size: 10px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 20px !important; /* 150% */
+}
+
+.font-34-800 {
+  font-size: 34px !important;
+  font-style: normal;
+  font-weight: 800 !important;
+  line-height: 40px; /* 150% */
+}
+
+.font-20-800 {
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 800 !important;
+  line-height: 32px; /* 150% */
+}
+
+.font-002680 {
+  color: #002680 !important;
+}
+.font-ffffff {
+  color: #ffffff !important;
+}
+
+.font-28C76F {
+  color: #28c76f !important;
+}
+
+.font-0075FF {
+  color: #0075ff !important;
+}
+
+.font-7E7E7E {
+  color: #7e7e7e !important;
+}
+
+.font-2A2A2A {
+  color: #2a2a2a !important;
+}
+
+.font-A9A9A9 {
+  color: #a9a9a9 !important;
+}
+
+.font-5D596C {
+  color: #5d596c !important;
+}
+
+.font-535353 {
+  color: #535353 !important;
+}
+
+.font-2F2B3DE5 {
+  color: #2f2b3de5 !important;
+}
+.font-00CFE8 {
+  color: #00cfe8 !important;
+}
+
+.bg-002680 {
+  background-color: #002680 !important;
+}
+
+.input-height .v-input__control {
+  height: 40px !important;
+}
+
+.input-checkbox .v-input__details {
+  display: none !important;
+}
+
+.input-checkbox .v-selection-control--density-default {
+  --v-selection-control-size: 20px !important;
+}
+
+.input-checkbox .v-label {
+  padding-left: 10px !important;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+}
+
+.no-shadow .v-field {
+  box-shadow: none !important;
+}
+
+.no-border .v-field,
+.no-border .v-field::before,
+.no-border .v-field::after {
+  border: none !important;
+}
+
+input::placeholder,
+input {
+  /* Body/Roman/B2 */
+  font-family: Avenir !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 20px !important; /* 142.857% */
+  letter-spacing: 0.25px !important;
+}
+
+.v-selection-control .v-label,
+.v-checkbox .v-label {
+  color: #2f2b3d !important;
+  opacity: 1 !important;
+  font-family: Avenir !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 20px; /* 142.857% */
+}
+
+.v-checkbox .v-input__details {
+  display: none !important;
+}
+
+.v-select__selection-text {
+  /* Body/Roman/B2 */
+  font-family: Avenir;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 20px !important; /* 142.857% */
+  letter-spacing: 0.25px !important;
+}
+
+//populate data dropdown
+.v-select__selection {
+  /* Body/Roman/B2 */
+  font-family: Avenir;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 20px !important; /* 142.857% */
+  letter-spacing: 0.25px !important;
+}
+
+.showDropdown .v-field__input {
+  padding-top: 0px !important;
+}
+
+.showDropdown .v-input__control,
+.showDropdown .v-field__append-inner,
+.showDropdown .v-field__field,
+.showDropdown .v-field__input {
+  height: 35px !important;
+}
+
+.btnTop {
+  border-radius: 6px !important;
+  box-shadow: 0px 2px 4px 0px rgba(165, 163, 174, 0.15) !important;
+}
+
+.v-pagination__list {
+  justify-content: right !important;
+}
+
+.v-pagination__item button {
+  background-color: #eee !important;
+  color: #7e7e7e !important;
+
+  padding: 13px !important;
+  border-radius: 6px !important;
+}
+
+.v-pagination__item--is-active button {
+  background-color: #002680 !important;
+  color: #ffffff !important;
+}
+
+.rolesTable tbody tr td {
+  color: #7e7e7e;
+  font-family: Avenir;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.25px;
+}
+
+.rolesTable td,
+.rolesTable th {
+  padding-left: 16px !important;
+  padding-right: 24px !important;
+}
+.tabs-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-divider {
+  width: 100%;
+  height: 2px;
+  background-color: #002680;
+  position: absolute;
+  bottom: -16px; /* Adjust this value as needed */
+  left: 0;
+  z-index: 1;
+}
+
+.mdi-eye-outline,
+.mdi-eye-off-outline,
+.mdi-calendar-today-outline {
+  color: #002680 !important;
+  opacity: 1 !important;
+}
+
+.mdi-paperclip {
+  color: #002680 !important;
+  opacity: 1 !important;
+  transform: rotate(45deg);
+}
+/*mobile responsive*/
+@media (max-width: 600px) {
+  .hideMobile {
+    display: none !important;
+  }
+  .font-34-800 {
+    font-size: 20px !important; /* Adjust as needed */
+    font-weight: 800 !important;
+    /* You may not need to redefine font-weight if it remains the same */
+  }
+  .font-16-400 {
+    font-size: 12px !important; /* Adjust as needed */
+    font-weight: 400 !important;
+    font-style: normal;
+    line-height: 24px; /* 150% */
+    /* You may not need to redefine font-weight if it remains the same */
+  }
+}
+/* You can also add other global styles here */
+.font-16-400,
+.v-list-item-title:not(.v-treeview .v-list-item-title) {
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 24px;
+}
+.header-footer:not(.v-treeview *) {
+  display: flex;
+  padding: var(--Spacing-mid, 16px) var(--Spacing-large, 24px);
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+/* Table styles */
+.v-data-table:not(.v-treeview .v-data-table) .text-center {
+  display: flex;
+  justify-content: center;
+}
+
+.rolesTable:not(.v-treeview .rolesTable) tbody tr td {
+  color: #7e7e7e;
+  font-family: Avenir, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+.rolesTable:not(.v-treeview .rolesTable) td,
+.rolesTable:not(.v-treeview .rolesTable) th {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+/* Button and input styles */
+.btnTop:not(.v-treeview .btnTop) {
+  border-radius: 6px !important;
+  box-shadow: 0px 2px 4px 0px rgba(165, 163, 174, 0.15) !important;
+}
+
+.showDropdown:not(.v-treeview .showDropdown) .v-field__input {
+  padding-top: 0px !important;
+}
+
+.showDropdown:not(.v-treeview .showDropdown) .v-input__control,
+.showDropdown:not(.v-treeview .showDropdown) .v-field__append-inner,
+.showDropdown:not(.v-treeview .showDropdown) .v-field__field,
+.showDropdown:not(.v-treeview .showDropdown) .v-field__input {
+  height: 35px !important;
+}
+
+/* Pagination styles */
+.v-pagination__list:not(.v-treeview .v-pagination__list) {
+  justify-content: right !important;
+}
+
+.v-pagination__item:not(.v-treeview .v-pagination__item) button {
+  background-color: #eee !important;
+  color: #7e7e7e !important;
+  padding: 13px !important;
+  border-radius: 6px !important;
+}
+
+.v-pagination__item--is-active:not(.v-treeview .v-pagination__item--is-active)
+  button {
+  background-color: #002680 !important;
+  color: #ffffff !important;
+}
+
+/* Icon styles */
+.mdi-menu-right:not(.v-treeview .mdi-menu-right)::before {
+  content: "Next" !important;
+  color: #7e7e7e !important;
+  font-family: Avenir, sans-serif !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  letter-spacing: 0.25px !important;
+  text-transform: capitalize !important;
+  background-color: #eee !important;
+  padding: 13px !important;
+  border-radius: 6px !important;
+}
+
+/* Icon styles */
+.mdi-menu-left:not(.v-treeview .mdi-menu-left)::before {
+  content: "Previous" !important;
+  color: #7e7e7e !important;
+  font-family: Avenir, sans-serif !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  letter-spacing: 0.25px !important;
+  text-transform: capitalize !important;
+  background-color: #eee !important;
+  padding: 13px !important;
+  margin-right: 25px !important;
+  border-radius: 6px !important;
+}
+
+/* v-treeview specific overrides */
+.v-treeview {
+  font-family: inherit;
+}
+
+.v-treeview .v-treeview-node__root {
+  min-height: 32px;
+}
+
+.v-treeview .v-treeview-node__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.v-treeview .v-treeview-node__children {
+  padding-left: 24px;
+}
