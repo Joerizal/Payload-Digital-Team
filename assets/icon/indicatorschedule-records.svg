@@ -1,0 +1,10 @@
+<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="calendar-time">
+<path id="Path" d="M7.86333 14.555H3.33333C2.59695 14.555 2 13.958 2 13.2217V5.22167C2 4.48529 2.59695 3.88834 3.33333 3.88834H11.3333C12.0697 3.88834 12.6667 4.48529 12.6667 5.22167V7.88834" stroke="#0058BF" stroke-linecap="round" stroke-linejoin="round"/>
+<circle id="Oval" cx="11.9997" cy="12.555" r="2.66667" stroke="#0058BF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_2" d="M10.0003 2.55499V5.22166" stroke="#0058BF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_3" d="M4.66634 2.55499V5.22166" stroke="#0058BF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_4" d="M2 7.88833H12.6667" stroke="#0058BF" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_5" d="M12 11.5523V12.555L12.6667 13.2217" stroke="#0058BF" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

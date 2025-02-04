@@ -1,38 +1,69 @@
-import MainLayout from '@/layouts/MainLayout.vue'
 import { createRouter, createWebHistory } from 'vue-router'
+import MainLayout from '@/layouts/MainLayout.vue'
 import PostList from '@/components/PostList.vue'
 import CreatePage from '@/components/CreatePage.vue'
+import HomePage from '@/views/HomePage.vue'
+import LoginPage from '@/views/LoginPage.vue'
+import LoginLayout from '@/layouts/LoginLayout.vue'
 
-// Define the routes
 const routes = [
   {
     path: '/',
-    component: MainLayout,
+    component: LoginLayout,
     children: [
       {
-        path: '', // Default child route of MainLayout for '/'
-        name: 'Home', // This can be the main "home" route, loading PostList
+        path: '', // Default child route
+        name: 'Login',
+        component: LoginPage,
+      },
+      {
+        path: 'pages/:id',
+        name: 'PostList',
         component: PostList,
-        meta: { requireAuth: false },
+        props: true,
+      },
+      {
+        path: 'create-page',
+        name: 'CreatePage',
+        component: CreatePage,
       },
     ],
   },
   {
-    path: '/post',
-    name: 'PostList',
-    component: PostList,
-  },
-  {
-    path: '/create-page',
-    name: 'CreatePage', // Name for the CreatePage component
-    component: CreatePage,
+    path: '/dashboard',
+    component: MainLayout,
+    redirect: '/dashboard/home',
+    children: [
+      {
+        path: 'home',
+        name: 'Home',
+        component: HomePage,
+      },
+      {
+        path: 'pages/:id',
+        name: 'PostList',
+        component: PostList,
+        props: true,
+      },
+      {
+        path: 'create-page',
+        name: 'CreatePage',
+        component: CreatePage,
+      },
+    ],
   },
 ]
 
-// Create the router instance
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+})
+
+// Add navigation guard for debugging
+router.beforeEach((to, from, next) => {
+  console.log('Navigation to:', to.fullPath)
+  console.log('Params:', to.params)
+  next()
 })
 
 export default router

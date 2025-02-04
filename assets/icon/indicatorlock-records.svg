@@ -1,0 +1,7 @@
+<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="lock">
+<rect id="Rectangle" x="3.33301" y="7.88834" width="9.33333" height="6.66667" rx="2" stroke="#EA5455" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse id="Oval" cx="7.99967" cy="11.2217" rx="0.666667" ry="0.666667" stroke="#EA5455" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path" d="M5.33301 7.88833V5.22166C5.33301 3.7489 6.52692 2.55499 7.99967 2.55499C9.47243 2.55499 10.6663 3.7489 10.6663 5.22166V7.88833" stroke="#EA5455" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
